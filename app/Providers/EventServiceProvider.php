@@ -20,19 +20,15 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\PostPublish' => [
             'App\Listeners\PostPublishListener'
         ],
-    protected $listen = [
         'App\Events\CommentPublish' => [
             'App\Listeners\CommentPublishListener'
         ],
-    protected $listen = [
         'App\Events\PostDelete' => [
             'App\Listeners\PostDeleteListener'
         ],
-    protected $listen = [
         'App\Events\CommentDelete' => [
             'App\Listeners\CommentDeleteListener'
         ],
-    protected $listen = [
         'App\Events\UserDelete' => [
             'App\Listeners\UserDeleteListener'
         ],

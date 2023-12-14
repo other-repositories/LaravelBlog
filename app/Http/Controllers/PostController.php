@@ -58,7 +58,7 @@ class PostController extends Controller {
 	function drop($user, $post) {
 	        $delete_post = Post::find($post);
         	$delete_post->delete();
-        	event(new PostPublish($delete_post));
+        	event(new PostDelete($delete_post));
         	return redirect('/user/'.$user)->with('Ok', '');
 
 	}

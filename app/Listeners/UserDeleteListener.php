@@ -9,6 +9,6 @@ class UserDeleteListener
 {
     public function handle(UserDelete $event)
     {
-        Log::info('Delete user ' . $event->post->id);
+        Log::info('Delete user ' . $event->user->id);
     }
 }
